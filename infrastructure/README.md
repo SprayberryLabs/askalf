@@ -47,19 +47,14 @@ Optional:
 
 ```
 infrastructure/
-├── nginx/               # Webhost stack only (askalf.org, amnesia.tax)
-│   ├── conf.d/          # nginx site configs
-│   └── static/          # Landing page, docs, privacy, terms
 ├── postgres/
-│   └── postgresql.conf  # Tuned PostgreSQL config
+│   └── postgresql.conf       # Tuned PostgreSQL config
 ├── redis/
-│   └── redis-selfhosted.conf
+│   └── redis-selfhosted.conf # Redis config for self-hosted
 ├── searxng/
-│   └── settings.yml     # Search engine config
+│   └── settings.yml          # Search engine config
 └── README.md
 ```
-
-> **Note:** The `nginx/` directory is used by the separate webhost stack (`docker-compose.webhost.yml`) that serves askalf.org and amnesia.tax. It is not part of the self-hosted deployment.
 
 ## Maintenance
 
